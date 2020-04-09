@@ -2,7 +2,7 @@ build:
 	@echo 'Build docker container...'
 	docker build -t go-app .
 
-start:
+start: build
 	docker run -d --name go-app go-app
 
 start:
